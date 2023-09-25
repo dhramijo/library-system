@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "570fe6ba-05f4-456b-8995-6a9c1a6ec810",
+		"name": "Berenberg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Current Inventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/items/current-inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"items",
+						"current-inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Overdue Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/items/current-inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"items",
+						"current-inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get If Item is Available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/items//available",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"items",
+						"",
+						"available"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Borrowed Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/1/items/borrowed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1",
+						"items",
+						"borrowed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrow Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/1/items/3/{uniqueId}/borrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1",
+						"items",
+						"3",
+						"{uniqueId}",
+						"borrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/1/items/1/1/return",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1",
+						"items",
+						"1",
+						"1",
+						"return"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
